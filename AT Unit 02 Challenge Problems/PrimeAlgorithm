@@ -1,0 +1,23 @@
+
+10/23/24
+SW design with Java 
+Jonathan Martinez 
+
+This is a written Algorithm to determine whether a integer is prime 
+
+
+First - Collect a positive input from the user. Anything less than or equal to 1 is useless. 
+Any number that is greater than two AND even can also be disregared, since every even number can be divisible by 2.
+
+if userNumber = 2 -> return true 
+
+Second - Start a loop that begins at i = 3 and ends at userNumber, and that moves in incriments of two. 
+
+Third - For each incriment. check if userNumber % i == 0.  If userNumber % i = 0, then return false, since the number is divisable by something other than 1 and itself. Else if userNumber % i != 0 by the time i has reached the value of userNumber, then return True. 
+
+Fourth - Add input validation to make sure strings don't crash code 
+
+
+
+
+
