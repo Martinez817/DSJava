@@ -12,10 +12,10 @@ public class Cesium {
        Scanner in = new Scanner(System.in); 
        Double cesiumAmount = 100.0; 
        int cesiumYear = 1; 
-
+        // Making sure it's over 99% to continue the math. 
        while (cesiumAmount > 1.0){
         if (cesiumYear % 30 == 0){
-            cesiumAmount = cesiumAmount / 2.00; 
+            cesiumAmount = cesiumAmount / 2.0; 
             if (cesiumAmount > 1.0){
                 cesiumYear++;
             } 
