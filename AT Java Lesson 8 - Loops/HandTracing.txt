@@ -16,7 +16,7 @@ Part C Outputs (line by line):
 2: 
 "4 " 
 "7 " 
-"11 " 
+"10 " 
 "13 " 
 
 3:  
