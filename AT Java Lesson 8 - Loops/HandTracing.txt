@@ -3,30 +3,17 @@
 SW design with Java 
 Jonathan Martinez 
 
-Part C Outputs (line by line): 
+Part C Outputs: 
 
 1: 
-
-"1 " 
-"4 " 
-"7 " 
-"10 " 
-
+"1 4 7 10 " 
 
 2: 
-"4 " 
-"7 " 
-"10 " 
-"13 " 
+"4 7 10 13 " 
 
 3:  
-"1 " 
-"2 "
-"3 " 
+"1 2 3 " 
 
 4:
-"1 "
-"2 "
-"3 "
-"4 "
+"1 2 3 4 "
 
