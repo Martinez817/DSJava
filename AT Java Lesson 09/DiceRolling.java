@@ -20,13 +20,15 @@ public class DiceRolling {
         while (true){
             System.out.printf("%nWhat would you like to do with the die?: %nROll - Rolls the dice value %nDISPLAY - Displays the dice %nVALUE - Gives the value of the Dice %nQUIT - Ends the program %n%n"); 
             String input = in.nextLine(); 
-            if (input.equals("ROLL")){
+            String upperCaseInput = input.toUpperCase(); 
+
+            if (upperCaseInput.equals("ROLL")){
                 die.roll(); 
-            } else if (input.equals("DISPLAY")){
+            } else if (upperCaseInput.equals("DISPLAY")){
                 die.display(); 
-            } else if (input.equals("VALUE")){
+            } else if (upperCaseInput.equals("VALUE")){
                 die.value();
-            } else if (input.equals("QUIT")){
+            } else if (upperCaseInput.equals("QUIT")){
                 System.out.println("Thank you for playing! Have a good day!"); 
                 break; 
             } else {
