@@ -16,15 +16,15 @@ public class LetThereBeLight {
 
         //  The main looping mechanism for this whole operation 
         while (true) {
-            System.out.printf("%nEnter in a command (in all caps) for the light: %nTON - Turn ON %nTOFF - Turn OFF %nBUP - Brightness Up %nBDOWN - Brightness Down %nVIEW - View current status of the Light %nQUIT - Quit the Program %n"); 
+            System.out.printf("%nEnter in a command (in all caps) for the light: %nON - Turn ON %nOFF - Turn OFF %nUP - Brightness Up %nDOWN - Brightness Down %nVIEW - View current status of the Light %nQUIT - Quit the Program %n"); 
             String input = in.nextLine(); 
-            if (input.equals("TON")){
+            if (input.equals("ON")){
                 light.turnOn(); 
-            } else if (input.equals("TOFF")){
+            } else if (input.equals("OFF")){
                 light.turnOff(); 
-            } else if (input.equals("BUP")){
+            } else if (input.equals("UP")){
                 light.brightnessUp(); 
-            } else if (input.equals("BDOWN")){
+            } else if (input.equals("DOWN")){
                 light.brightnessDown(); 
             } else if (input.equals("VIEW")){
                 light.viewLight(); 
