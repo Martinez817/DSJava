@@ -45,6 +45,7 @@ public class LetThereBeLight {
 // When interacting with a light you can: adjust the brightness, turn it on or off, and look at it. 
 // All this stuff below is the "nitty gritty" 
 class DimmableLight {
+    
     private boolean power = false; 
     private int brightness = 1; 
 
