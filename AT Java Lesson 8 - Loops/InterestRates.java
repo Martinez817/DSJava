@@ -66,6 +66,7 @@ public class InterestRates {
             year++; 
 
         }
+        
         System.out.println("--------------------------------------------------");
         System.out.print("Do with this what you will. Have a good day!"); 
 
