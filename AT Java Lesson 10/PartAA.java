@@ -6,7 +6,7 @@
  * 
  */
 
-public class PartA {
+public class PartAA {
 
     //    public static void main(String[] args) {
     //    String name = "Harry";

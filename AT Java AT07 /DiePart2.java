@@ -1,17 +1,14 @@
 /*
- * 
- * 10/29/24
- * SW Design with Java
- * Jonathan Martinez 
- * 
- * This program is used to roll and display a dice. 
+ * 11/19/24 
+ * Sw Design with Java 
+ * Jonathan Martinez  
  * 
  * 
  */
 import java.util.Scanner; 
 import java.util.Random; 
 
-public class DiceRolling {
+public class DiePart2 {
     public static void main(String[] args) {
         Die die = new Die(); 
         Scanner in = new Scanner (System.in); 
@@ -52,10 +49,11 @@ class Die {
     Random random = new Random();
     private int diceValue; 
 
+    // constructor
     public Die(){
         diceValue = 1; 
     }
-
+   
     public void roll() {
         diceValue = random.nextInt(6) + 1;
         System.out.printf("%nThe Dice has been rolled!%n");
@@ -102,3 +100,4 @@ class Die {
         System.out.printf("+-------+%n");
     }
 }
+

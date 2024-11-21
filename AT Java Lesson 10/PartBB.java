@@ -7,7 +7,7 @@
  * 
  */
 import java.util.Scanner; 
-public class PartB {
+public class PartBB {
     // public static void main(String[] args) {
     // Scanner in = new Scanner(System.in);
     // System.out.print("Enter number of cookies: "); 
