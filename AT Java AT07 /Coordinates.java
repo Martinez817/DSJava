@@ -13,6 +13,7 @@ public class Coordinates {
     public Coordinates() { 
         double x = 0; 
         double y = 0; 
+        
     }
 
     public Coordinates(int z, int t){

@@ -6,11 +6,13 @@
  */
 
 public class TestingArrays {
-    public static void swap(int a, int b) {
+    public static int swap(int a, int b) {
         int tmp;
         tmp = a;
         a = b;
         b = tmp;
+        return a; 
+        
     }
 
     public static void main(String[] args) {
