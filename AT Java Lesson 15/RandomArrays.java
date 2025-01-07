@@ -49,7 +49,6 @@ class Array {
     }   
     
     public static void linearSearch(int targetValue) {
-        Scanner in = new Scanner(System.in); 
         int amount = 0; 
         long startTime = System.currentTimeMillis(); 
         for (int i = 0; i < values.length; i++){
@@ -57,8 +56,8 @@ class Array {
                 amount++;
             } 
         } if (amount == 0){
-                System.out.print("%nThe target value is not found in the Array."); 
-        }
+                System.out.printf("%nThe target value is not found in the Array."); 
+        } 
         long endTime = System.currentTimeMillis(); 
         System.out.printf("%nThe target value %d appears in the array %d time(s). %n", targetValue, amount);
         System.out.printf("The Program took " + (endTime - startTime) + " ms. %n"); 
@@ -72,9 +71,11 @@ class Array {
         int index = Arrays.binarySearch(copy, targetValue);
         if (index >= 0){
             System.out.printf("%nThe target value appears in the Array at Array space: %d%n", index);
-        } else {
+        } else if (index == 0) {
             System.out.printf("The target value does not appear in the Array.%n");
-        }
+        } else {
+            System.out.printf("Error: Invalid input.%n");
+        }       
         long endTime = System.currentTimeMillis();
         System.out.printf("The Program took " + (endTime - startTime) + " ms. %n");
         
