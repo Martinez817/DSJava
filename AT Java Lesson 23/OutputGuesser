@@ -1,0 +1,30 @@
+Part B:
+What is the output of the following code and why?
+
+    public static int getInt() {
+        try {
+            return 1;
+        } catch (Exception e) {
+            return 2;
+        } finally {
+            return 3;
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(getInt());
+    }
+
+
+
+/*
+ * The output of the following code would be: 
+ * 
+ * 3
+ * 
+ * This is because the method returns 1 in the first, doesn't catch an exception, however is forced to run the finally task and 
+ * return the number 3. 
+ * 
+ * 
+ * 
+ */
