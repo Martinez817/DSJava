@@ -15,7 +15,7 @@ public class PartB {
             yard.print(moe);
             delay(500); 
             if (moe.checkInFront(yard)){
-                moe.move();
+                moe.move(yard);
             } else {
                 break; 
             }
