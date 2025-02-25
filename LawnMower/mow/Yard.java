@@ -59,9 +59,27 @@ public class Yard {
         }
     }
 
+    public void print(Mower m){
+        for (int r = 0; r < getHeight(); r++){
+            for (int c = 0; c < getWidth(); c++){
+                if (c == m.getX() && r == m.getY() ){
+                    System.out.print(m.getArrow()); 
+                    
+                } else {
+                    System.out.print(yard[r][c]); 
+                }
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Yard y = new Yard(6,7);
-        y.print(); 
+        Mower m = new Mower (1, 1, 0); 
+        y.print(m); 
+
+
+
 
     }
  }
