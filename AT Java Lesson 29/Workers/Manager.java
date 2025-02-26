@@ -20,4 +20,10 @@ public class Manager extends Employee {
     public double getAnnualIncome() {
         return getSalary() + bonus;
     }
+
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        System.out.printf("  Bonus  = $%,12.2f%n", bonus);
+    }
 }

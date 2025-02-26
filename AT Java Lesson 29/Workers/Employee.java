@@ -27,4 +27,9 @@ public class Employee {
     public double getAnnualIncome() {
         return getSalary();
     }
+
+    public void displayInfo() {
+        System.out.println(name + ":");
+        System.out.printf("  Salary = $%,12.2f%n", salary);
+    }
 }
