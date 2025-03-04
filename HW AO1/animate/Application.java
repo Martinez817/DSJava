@@ -3,7 +3,7 @@ package animate;
 import javax.swing.JFrame;
 
 public class Application extends JFrame {
-    private final int FRAME_WIDTH = 6;
+    private final int FRAME_WIDTH = 350;
     private final int FRAME_HEIGHT = 350;
 
     /*
