@@ -1,0 +1,20 @@
+Assignment:
+Part A:
+Laurie launches an email app on her smartphone. She uses it to check her work email. The steps involved are as follows:
+1. The email app establishes a connection to the email server 
+2. Laurie’s login credentials are authenticated by the server.
+3. For receiving emails, the app sends a request to the server, which then retrieves and downloads new messages.
+4. For sending emails, the app formats the message and sends it to the server, which then forwards it to the recipient's email server.
+5. The app updates the user interface to display the latest email status.
+
+At some point, all the packages go through that ip-conversion thing too. 
+
+Part B:
+Jerry decides to play an online first-person shooter game with some friends. The steps involved are as follows:
+1. The game application establishes a connection to the game server
+2. Jerry logs in, and his credentials are authenticated by the server.
+3. The game client sends Jerry’s actions (e.g., movement, shooting) to the server in real-time.
+4. The server processes the data and updates the game state for all players.
+5. The server sends updates back to Jerry’s game client, which renders the changes on his screen.
+6. This process repeats continuously to ensure smooth gameplay.
+
