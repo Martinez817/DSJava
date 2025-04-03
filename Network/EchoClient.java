@@ -3,8 +3,8 @@ import java.net.*;
 
 public class EchoClient {
     public static void main(String[] args) {
-        String serverAddress = "localhost"; // Change to server IP if needed
-        int port = 8765; // Change to the server's port if needed
+        String serverAddress = "localhost"; 
+        int port = 8765; 
 
         try (Socket socket = new Socket(serverAddress, port);
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
@@ -15,8 +15,8 @@ public class EchoClient {
 
             String userInput;
             while ((userInput = stdIn.readLine()) != null) {
-                out.println(userInput); // Send message to server
-                System.out.println("Server response: " + in.readLine()); // Read server response
+                out.println(userInput); 
+                System.out.println("Server response: " + in.readLine()); 
             }
         } catch (IOException e) {
             System.err.println("Error connecting to the server: " + e.getMessage());
