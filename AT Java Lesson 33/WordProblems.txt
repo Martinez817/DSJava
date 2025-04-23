@@ -1,0 +1,55 @@
+
+Part A:
+Question #1: Consider the interface declaration below:
+public interface Resizable {
+   void resize(double factor);
+}
+Assuming that classes Square, Circle, and Triangle all implement Resizable, which of the following statements will cause a compilation error and why?
+Resizable shape = new Resizable();
+Resizable shape = new Square();
+Resizable shape = new Circle();
+Resizable shape = new Triangle();
+
+        Resizeable shape = new Resizeable won't work because it is trying to create an instance of an interface, which are only 
+        supposed to be implemented by classes. 
+
+
+
+
+
+Question #2: Consider the interface and class declarations below:
+public interface Resizable {
+   void resize(double factor);
+}
+
+public class Circle implements Resizable {
+  private double radius;...
+
+  public Circle(double theRadius) { ... }
+
+  public double getRadius() { ... }
+
+  public void setRadius(double theRadius) { ... }
+
+  public double getArea() { ... }
+
+  public void resize(double factor) { ... }...
+}
+Given the declaration  
+Resizable circle = new Circle(5.5);
+
+Which of the following statements will compile successfully and why?
+
+System.out.println(circle.getRadius());
+circle.resize(2.5);
+System.out.println(circle.getArea());
+circle.setRadius(7.8);
+
+        circle.resize(2.5) is the only statement that will compile succesfully because the circle is declared in the Resizeable interface and not 
+        the Circle interface. Since all the methods within the circle interface are not visible to the Circle that was declared,  the other 
+        statements will not work. 
+
+
+
+
+
