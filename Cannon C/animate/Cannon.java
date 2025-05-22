@@ -56,14 +56,11 @@ public class Cannon {
     public void draw(Graphics2D g2d) {
         AffineTransform old = g2d.getTransform();
         AffineTransform at = new AffineTransform();
-
         double pivotX = x + 15;
         double pivotY = y + 25.5;
-
         at.translate(pivotX, pivotY);
         at.rotate(-angle);
         at.translate(-15, -25.5);
-
         g2d.drawImage(image, at, null);
         g2d.setTransform(old);
 
@@ -86,14 +83,24 @@ public class Cannon {
             yPoints[i] = (int)(pivotY + xOffset * Math.sin(flipAngle) + yOffset * Math.cos(flipAngle));
         }
 
-        int triangleOffsetY = 30;
         for (int i = 0; i < 3; i++) {
-            yPoints[i] += triangleOffsetY;
+            yPoints[i] += 30;
         }
 
         g2d.setColor(Color.PINK);
         g2d.fillPolygon(xPoints, yPoints, 3);
         g2d.setColor(Color.BLACK);
         g2d.drawPolygon(xPoints, yPoints, 3);
+    }
+
+    public double getAngle() {
+        return angle;
+    }
+
+    public double[] getBarrelEnd() {
+        double barrelLength = 60;
+        double endX = x + 15 + barrelLength * Math.cos(angle);
+        double endY = y + 25.5 - barrelLength * Math.sin(angle);
+        return new double[]{endX, endY};
     }
 }
